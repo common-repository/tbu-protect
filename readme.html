@@ -1,0 +1,85 @@
+<html>
+	<head>
+		<title>TBU Protect</title>
+		<style type="text/css">
+			ul p{border:1px solid #999;background-color:#cfcfcf;padding:10px;}
+			#features{border:1px solid #666;background-color:#CCFFFF;padding:27px;margin:10px;}
+			#features {list-style:none;}
+			.copyright {font-size:7pt;color:black;font-weight:bold;text-transform:uppercase;text-decoration:none;}
+			h3 a,p a{text-decoration:none;color:black;}
+			
+		</style>
+	</head>
+	<body>
+	<h3><a href="http://themesby.us/"><img src="images/themesbyus.png" border=0>TBU Protect</a></h3>
+	<a class="copyright" style="position:relative;top:-20px;" href="http://themesby.us">Author: Themes By Us</a>
+	<p>TBU Protect is a Wordpress Plugin developed by <a class="copyright" href="http://themesby.ys">Themes By Us</a>. It's main goal is to prevent anyone from stealing your content, media, and effort.  This plugin succeeds where others fail. It's multi-level feature-pack protection schemes will work for simple bloggers to large complicated site protections. Strongbox gives you complete control blocking 99.9% of attempts to steal your hard work.  As you will read below this plugin is not for the faint hearted.  Some features do come with drawbacks. Strongbox is a shell for wordpress.  It prevents people from stealing by creating layered obsfucation and encryption.  It's such a thick layer using ajax as communication it makes anyone without javascript parser broken at the start.  
+It works by using common technologies in various languages including Wordpress to create break points in the execution at which they are encrypted.  This is a reversible encryption so in their someone could reverse engineer this script (likely), build a javascript parsing robot (not likely), then custom engineer a scrapper (not likely) all to just get to a point where they could automate a scrapping.  
+	Combine that with a feature packed javascipt annoyance package and your basic low-intelligent screening filters you will easily ward-off the majority of would be stealers, thieves, hackers, scrapers, bots, search engines, but not your value customers. 
+	<h2>Features</h2>	
+	<ul id="features">
+			<li>No Right Click</li>
+			<li>No Text Select *See Bugs*</li>
+			<li>Frame Bust Out</li>
+			<li>No Javascript Tag</li>
+			<li>Idiot Buffer</li>
+			<li>Fake 404</li>
+			<li>Invisible Copyright Tag</li>
+			<li>StrongBox</li>
+		</ul>
+		<h2>Features unique to this plugin</h2>
+		<h4>StrongBox</h4>
+		Our gift to the open source community.  Up till now there truly was no way to prevent people from stealing content.  Our technology uses AJAX remoting, Encrytion, Obsurfaction, and just ingenuity to outwit people.  This feature has mixes blessings however.
+	<br>-Pros:<br>
+		<ul>
+			<li>Shelled Pages - Hard to scrap</li>
+			<li>Encrypted Loaders - Hard to break if you are motivated</li>
+			<li>Obsurfaction - Just another PIA for anyone thinking about stealing content</li>
+		</ul>
+	<br>-Cons:<br>
+		<ul>
+			<li>Hard to scrap, this means everyone.  Search engines will have a hard time if you use strongbox feature.</li>
+			<li>Lack of SEO tags in header.</li>
+			<li>In a nut-shell until we integrate seo options, this is committing SEO-suicide. If you have alot of referalls/direct this should be no problem.  I'm still testing it with google, but I think google is the only one that has it figure out.</li>
+			<li>Untested Incompatiblities.  Althought tested with the most popular plugins of the day there is still possible problems.  There is literally too much to test with a fundamental change of process like strongbox.  It's funcationality is akin to AJAX caching on steriods.</li>
+		</ul>
+		<br>
+		All that being said this is a great feature.  I use it on all my sites as it just keeps your site "yours" which is a rare thing to do on the net.  With conjunction of the disabling javascript features all most everyday joe and even coroporate programmers will be stopped or slowed.
+		<h4>Idiot Buffer</h4>
+		It would be easy to call this whole plugin an idiot buffer but this is truly a ID-10T test. All this feature does is put random blank lines at the beginning of the source file.  So if someone was to even see your source you will hopefully dumbfound them, perhaps network error? I don't see anything.  Reload..  Must be broke.  Nevermind the scrollbar, but you know it works.
+		<h4>Invisible Tag</h4>
+		This is a bit more blanant warning to anyone trying to view your source.  It puts a &lt;invisible&gt; tag at the top of the page (even before the idiot buffer) to tell people that this is a copyrighted site and not to even attempt to steal.  I think this is the most polite way not to intice theivery.
+
+		<h4>FAKE 404 page</h4>
+		Similiar to the Invisible tag but it places a fake 404 in the source under an iframe.  This doesn't really fake out most people but it none the less is a way to obsfurcate.  It's in an iframe to avoid conflicts however it still does ocassioanly causes blinking.
+		<h2>Features Done By Us</h2>
+		<ul>
+			<li>No Right Click</li>
+			<p> This disables the right click menu of the mouse for most browsers. It prevents a majority of non-technical people from working around to get your content</p>
+			<li>No Text Select *See Bugs*</li>
+			<p> Similar to about but stops text selection.  So people can't click and drag text or images.</p>
+			<li>Frame Bust Out</li>
+			<p> Sites like google.com take your images and content and slap their name in a frame on it.  This prevents people from doing that by forcing a reload.</p>
+			<li>No Javascript tag</li>
+			<p> &lt;noscript&gt; was found to be incredibly buggy on Chrome thus we just implemnted the functionality with a document and alert. Styling is in tbuprotect.css</p>
+
+		</ul>	
+		<h3>Future Features</h3>
+		<ul>
+			<li>wp_nonce verify strongbox deletes strongbox file</li>
+			<p>http://codex.wordpress.org/Function_Reference/wp_verify_nonce</p>
+			<li>individual/global password protect pages. Salt encyrpt</li>
+			<li>randomizing strongbox directory structure</li>
+			<li>tbu_diffuse,and nobsjs swapping. Implement schemes XOR.</li>
+			<p>XOR http://th.atguy.com/mycode/xor_js_encryption/</p>
+			<li>Ultimate Strongbox.  Remove all esemblege of HTML and make it one giant code with eval</li>
+		</ul>
+			
+		<h3>Known Bugs</h3>
+		<ul>
+			<li>No Text Select - Chrome Mousedown (maybe others) Fails to register scrollbar events properly</li>
+			<li>Fake 404 page - Iframe blinking on some browsers</li>
+			<li>Overall Flicker - Sometimes, Some Browsers briefly see the nobsjs tags. Reason unknown at the moment.</li>
+		</ul>
+	</body>
+</html>
